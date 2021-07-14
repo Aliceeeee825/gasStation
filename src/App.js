@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react'
+import './App.css'
+import { Form, Input, Button, InputNumber } from 'antd';
+import sentences from './sentences.json'
 
 function App() {
+  const [number, setNumber] = useState(undefined)
+  const [sentence, setSentence] = useState(undefined)
+
+
+
+  const handleFinish = (values) => {
+    setNumber(values.number)
+    console.log(sentences.data.length)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div className="app">
+      <Form name="number" onFinish={handleFinish}>
+        <Form.Item label={"Put in a number here" + ` (max: ${sentences.data.length - 1}):`}
+        name="number"
         >
-          Learn React
-        </a>
-      </header>
+          <InputNumber min={0} max={sentences.data.length - 1} />
+        </Form.Item>
+
+        <Form.Item>
+          <Button htmlType="submit">
+            SHOW ME THE SENTENCE
+          </Button>
+        </Form.Item>
+      </Form>
+
+      {number !== null | undefined ? <div className='sentence'>
+        <p>{sentences['data'][number]}</p>
+      </div> : null}
     </div>
   );
 }
