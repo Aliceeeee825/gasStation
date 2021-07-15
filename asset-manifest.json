@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/gasStation/static/css/main.15486aab.chunk.css",
+    "main.js": "/gasStation/static/js/main.8483c512.chunk.js",
+    "main.js.map": "/gasStation/static/js/main.8483c512.chunk.js.map",
+    "runtime-main.js": "/gasStation/static/js/runtime-main.0c051e7d.js",
+    "runtime-main.js.map": "/gasStation/static/js/runtime-main.0c051e7d.js.map",
+    "static/css/2.81b0985c.chunk.css": "/gasStation/static/css/2.81b0985c.chunk.css",
+    "static/js/2.b8c59d82.chunk.js": "/gasStation/static/js/2.b8c59d82.chunk.js",
+    "static/js/2.b8c59d82.chunk.js.map": "/gasStation/static/js/2.b8c59d82.chunk.js.map",
+    "static/js/3.901ee887.chunk.js": "/gasStation/static/js/3.901ee887.chunk.js",
+    "static/js/3.901ee887.chunk.js.map": "/gasStation/static/js/3.901ee887.chunk.js.map",
+    "index.html": "/gasStation/index.html",
+    "static/css/2.81b0985c.chunk.css.map": "/gasStation/static/css/2.81b0985c.chunk.css.map",
+    "static/css/main.15486aab.chunk.css.map": "/gasStation/static/css/main.15486aab.chunk.css.map",
+    "static/js/2.b8c59d82.chunk.js.LICENSE.txt": "/gasStation/static/js/2.b8c59d82.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0c051e7d.js",
+    "static/css/2.81b0985c.chunk.css",
+    "static/js/2.b8c59d82.chunk.js",
+    "static/css/main.15486aab.chunk.css",
+    "static/js/main.8483c512.chunk.js"
+  ]
+}
